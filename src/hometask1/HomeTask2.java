@@ -1,4 +1,4 @@
-package hometask2rename;
+package hometask1;
 
 public class HomeTask2 {
     public static void main(String[] args) {
