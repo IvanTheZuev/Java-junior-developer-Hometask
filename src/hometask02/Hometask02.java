@@ -16,6 +16,7 @@ public class Hometask02 {
         var distanceKm = 2500;
 
         var velocity = distanceKm * 1000 / (timeKmh * 60 * 60);
+        System.out.println(velocity);
 
         //Третье задание
 
