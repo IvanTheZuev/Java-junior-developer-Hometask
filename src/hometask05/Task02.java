@@ -19,28 +19,17 @@ public class Task02 {
         int[] array2 = new int[len];
 
         for (int i = 0; i < array1.length; i++) {
-            for (int j = i + 1; j <= array2.length; j++) {
-                int num = console.nextInt();
-               // array1[i] = console.nextInt();
-                //array2[j] = console.nextInt();
-
-                if ((num < 0) && num <= array1.length)
-                {
-                    array1[i] = num;
-                } else if (num > 0 && num < array2.length)
-                {
-                    array2[j] = num;
-                }
-                if (array1.length == array2.length || num == 0) break;
-
-
+            int num = console.nextInt();
+            if(num < 0){
+                array1[i] = num;
+            } else if (num > 0) {
+                array2[i] = num;
             }
 
         }
-        Arrays.sort(array1);
-        Arrays.sort(array2);
-        System.out.println(array1.toString());
-        System.out.println(array2.toString());
+        for (int i = 0; i < array2.length; i++){
+            System.out.println(array1);
+        }
 
     }
 
