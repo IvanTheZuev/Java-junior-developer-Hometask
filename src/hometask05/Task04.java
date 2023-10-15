@@ -10,17 +10,15 @@ public class Task04 {
 
         int[] task04 = {88, 34, 12, 55, 90, 4, 10, 44};
 
-        Arrays.sort(task04);
-        //System.out.println(Arrays.toString(task04));
+        int windowSize = 4;
+        int windowStartIndex = 0;
+        int currentWindowSum = 0;
+        int maxSum = 0;
 
-        for (int i = 0; i < task04.length; i++){
-            for (int j = i +1; j < task04.length; j++){
-                for (int k = j +1; k < task04.length; k++){
-                    for(int g = k + 1; g < task04.length; g++ ){
-                        
-                    }
-                }
-            }
+        for(int windowEndIndex = 0; windowEndIndex < task04.length; windowEndIndex++){
+            currentWindowSum += windowEndIndex;
+
+            //if()
         }
 
 

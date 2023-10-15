@@ -18,17 +18,22 @@ public class Task02 {
         int[] array1 = new int[len];
         int[] array2 = new int[len];
 
-        for (int i = 0; i < array1.length; i++) {
-            int num = console.nextInt();
-            if(num < 0){
-                array1[i] = num;
-            } else if (num > 0) {
-                array2[i] = num;
-            }
+        int array1Index = 0;
+        int array2Index = 0;
 
-        }
-        for (int i = 0; i < array2.length; i++){
-            System.out.println(array1);
+        while(true) {
+            int number = console.nextInt();
+
+            if(number > 0 && array1Index < array1.length){
+                array1[array1Index] = number;
+                array1Index++;
+            } else if (number < 0 && array2Index < array2.length) {
+                array2[array2Index] = number;
+                array2Index++;
+
+            } else if (number == 0 || (array1Index == array1.length && array2Index == array2.length)) {
+                break;
+            }
         }
 
     }
